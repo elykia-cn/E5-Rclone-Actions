@@ -37,7 +37,7 @@ jobs:
           done
           }
           # 随机延迟0~30分钟后再进行操作,可自行设置时间
-          delay 2
+          delay 30
 
           # 更改时区
           sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
