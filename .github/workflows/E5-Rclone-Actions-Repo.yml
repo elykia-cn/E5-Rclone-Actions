@@ -12,7 +12,7 @@ jobs:
     steps:
 
       - name: Checkout codes
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install rclone #安装rclone
         run: curl https://rclone.org/install.sh | sudo bash
