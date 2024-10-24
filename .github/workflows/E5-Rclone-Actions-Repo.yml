@@ -45,11 +45,43 @@ jobs:
           # 列出文件(此处不展示)
           echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
           echo "列出文件(此处不展示)"
-          rclone lsf e5:/ > "lsf.log"
-          rclone mkdir e5:/E5-Rclone-Actions-Repo/
-          rclone move lsf.log e5:/E5-Rclone-Actions-Repo/
-          rclone delete e5:/E5-Rclone-Actions-Repo/lsf.log
-          rclone rmdir e5:/E5-Rclone-Actions-Repo/
+
+          rclone lsf elykia@huidou.fun:/ > "lsf.log"
+          rclone mkdir elykia@huidou.fun:/E5-Rclone-Actions-Repo/
+          rclone move lsf.log elykia@huidou.fun:/E5-Rclone-Actions-Repo/
+          rclone delete elykia@huidou.fun:/E5-Rclone-Actions-Repo/lsf.log
+          rclone rmdir elykia@huidou.fun:/E5-Rclone-Actions-Repo/
+
+          rclone lsf elykia@aniuo.com:/ > "lsf.log"
+          rclone mkdir elykia@aniuo.com:/E5-Rclone-Actions-Repo/
+          rclone move lsf.log elykia@aniuo.com:/E5-Rclone-Actions-Repo/
+          rclone delete elykia@aniuo.com:/E5-Rclone-Actions-Repo/lsf.log
+          rclone rmdir elykia@aniuo.com:/E5-Rclone-Actions-Repo/
+
+          rclone lsf elykia@zhugeyue.cn:/ > "lsf.log"
+          rclone mkdir elykia@zhugeyue.cn:/E5-Rclone-Actions-Repo/
+          rclone move lsf.log elykia@zhugeyue.cn:/E5-Rclone-Actions-Repo/
+          rclone delete elykia@zhugeyue.cn:/E5-Rclone-Actions-Repo/lsf.log
+          rclone rmdir elykia@zhugeyue.cn:/E5-Rclone-Actions-Repo/
+
+          rclone lsf elykia@xf768.onmicrosoft.com:/ > "lsf.log"
+          rclone mkdir elykia@xf768.onmicrosoft.com:/E5-Rclone-Actions-Repo/
+          rclone move lsf.log elykia@xf768.onmicrosoft.com:/E5-Rclone-Actions-Repo/
+          rclone delete elykia@xf768.onmicrosoft.com:/E5-Rclone-Actions-Repo/lsf.log
+          rclone rmdir elykia@xf768.onmicrosoft.com:/E5-Rclone-Actions-Repo/
+
+          rclone lsf elykia@msanity.onmicrosoft.com:/ > "lsf.log"
+          rclone mkdir elykia@msanity.onmicrosoft.com:/E5-Rclone-Actions-Repo/
+          rclone move lsf.log elykia@msanity.onmicrosoft.com:/E5-Rclone-Actions-Repo/
+          rclone delete elykia@msanity.onmicrosoft.com:/E5-Rclone-Actions-Repo/lsf.log
+          rclone rmdir elykia@msanity.onmicrosoft.com:/E5-Rclone-Actions-Repo/
+
+          rclone lsf elykia@eexiaolan.onmicrosoft.com:/ > "lsf.log"
+          rclone mkdir elykia@eexiaolan.onmicrosoft.com:/E5-Rclone-Actions-Repo/
+          rclone move lsf.log elykia@eexiaolan.onmicrosoft.com:/E5-Rclone-Actions-Repo/
+          rclone delete elykia@eexiaolan.onmicrosoft.com:/E5-Rclone-Actions-Repo/lsf.log
+          rclone rmdir elykia@eexiaolan.onmicrosoft.com:/E5-Rclone-Actions-Repo/
+
       - name: Zip config #打包配置文件
         run: zip -P ${{ secrets.PASSWD }} rclone.zip -j ~/.config/rclone/rclone.conf
 
