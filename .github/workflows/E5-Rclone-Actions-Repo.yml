@@ -39,11 +39,6 @@ jobs:
           rclone delete elykia@huidou.fun:/E5-Rclone-Actions-Repo/lsf.log
           rclone rmdir elykia@huidou.fun:/E5-Rclone-Actions-Repo/
 
-          rclone lsf elykia@aniuo.com:/ > "lsf.log"
-          rclone mkdir elykia@aniuo.com:/E5-Rclone-Actions-Repo/
-          rclone move lsf.log elykia@aniuo.com:/E5-Rclone-Actions-Repo/
-          rclone delete elykia@aniuo.com:/E5-Rclone-Actions-Repo/lsf.log
-          rclone rmdir elykia@aniuo.com:/E5-Rclone-Actions-Repo/
 
           rclone lsf elykia@zhugeyue.cn:/ > "lsf.log"
           rclone mkdir elykia@zhugeyue.cn:/E5-Rclone-Actions-Repo/
