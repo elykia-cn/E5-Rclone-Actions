@@ -59,11 +59,6 @@ jobs:
           rclone delete elykia@zhugeyue.cn:/E5-Rclone-Actions-Repo/lsf.log
           rclone rmdir elykia@zhugeyue.cn:/E5-Rclone-Actions-Repo/
 
-          rclone lsf elykia@xf768.onmicrosoft.com:/ > "lsf.log"
-          rclone mkdir elykia@xf768.onmicrosoft.com:/E5-Rclone-Actions-Repo/
-          rclone move lsf.log elykia@xf768.onmicrosoft.com:/E5-Rclone-Actions-Repo/
-          rclone delete elykia@xf768.onmicrosoft.com:/E5-Rclone-Actions-Repo/lsf.log
-          rclone rmdir elykia@xf768.onmicrosoft.com:/E5-Rclone-Actions-Repo/
 
           rclone lsf elykia@msanity.onmicrosoft.com:/ > "lsf.log"
           rclone mkdir elykia@msanity.onmicrosoft.com:/E5-Rclone-Actions-Repo/
